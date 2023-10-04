@@ -2,14 +2,14 @@
 <html>
 
 <head>
-
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 
 </head>
 
 </html>
 
 <script>
-    import { createClient } from '@supabase/supabase-js'
     const supabaseUrl = 'https://okyzquejqevelsfkvkos.supabase.co'
     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9reXpxdWVqcWV2ZWxzZmt2a29zIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTY0NTUwNDYsImV4cCI6MjAxMjAzMTA0Nn0.GFrI2hM-pQpMrmbILi_AELS5-WJdfbn_4CJOILVbIOc'
 
@@ -26,4 +26,5 @@
     const { data, err } =  supabase
         .from('countries')
         .select()
+        console.log(supabase)
 </script>
