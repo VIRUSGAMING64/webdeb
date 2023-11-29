@@ -1,0 +1,13 @@
+{
+    "engines": {
+        "node": ">=14"
+    },
+    "workspaces": {
+        "packages": [
+            "supabase-js"
+        ]
+    },
+    "dependencies": {
+        "mysql": "^2.18.1"
+    }
+}
